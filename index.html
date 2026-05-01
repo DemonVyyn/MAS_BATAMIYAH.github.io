@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="no-js">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="MAS Batamiyah — Madrasah Aliyah Bermutu, Kota Batam, Kepulauan Riau. Mendidik generasi unggul dan berkarakter." />
-    <meta name="keywords" content="MAS Batamiyah, Madrasah Aliyah, Batam, Kepulauan Riau, sekolah islam, pendidikan" />
-    <meta name="author" content="Alumni MAS Batamiyah" />
+    <meta name="description" content="MAS Batamiyah — Madrasah Aliyah Bermutu, Kota Batam, Kepulauan Riau." />
     <title>MAS BATAMIYAH — MA Bermutu</title>
 
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
         rel="stylesheet"
     />
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Fallback: jika JS tidak jalan, konten tetap tampil -->
+    <noscript>
+        <style>
+            .no-js .fade-up { opacity: 1 !important; transform: none !important; }
+            .no-js .nav-hamburger { display: none !important; }
+            .no-js .nav-links { display: flex !important; }
+        </style>
+    </noscript>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     NAVBAR
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
 <nav>
     <div class="nav-logo">
         <div class="emblem">B</div>
@@ -37,14 +40,12 @@
         <li><a href="#ekskul">Ekskul</a></li>
         <li><a href="#kontak">Kontak</a></li>
     </ul>
-
-    <!-- Hamburger (mobile) -->
     <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
     </button>
 </nav>
 
-<!-- Mobile Nav Overlay -->
+<!-- Mobile Overlay -->
 <div class="nav-mobile-overlay" aria-hidden="true">
     <ul class="nav-mobile-links">
         <li><a href="#identitas">Identitas</a></li>
@@ -56,9 +57,7 @@
     </ul>
 </div>
 
-<!-- ═══════════════════════════════════════
-     HERO
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
 <section id="hero">
     <div class="hero-left">
         <p class="hero-tag">Madrasah Aliyah · Terakreditasi -</p>
@@ -82,11 +81,11 @@
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <div class="num" data-target="2003">0</div>
+                    <div class="num" data-target="2003">2003</div>
                     <div class="lbl">Berdiri Sejak</div>
                 </div>
                 <div class="stat">
-                    <div class="num" data-target="100" data-suffix="+">0</div>
+                    <div class="num" data-target="100" data-suffix="+">100+</div>
                     <div class="lbl">Alumni</div>
                 </div>
                 <div class="stat">
@@ -98,9 +97,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     IDENTITAS
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ IDENTITAS ═══════════════════════════════════════ -->
 <section id="identitas">
     <div class="section-header fade-up">
         <p class="section-tag">Profil Lembaga</p>
@@ -130,11 +127,8 @@
             <div class="id-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!4v1776417247319!6m8!1m7!1spM3tJgX_KI9zukZFizTbhg!2m2!1d1.030333931663759!2d104.0952735199402!3f85.03789631340041!4f-5.228482760197849!5f0.7820865974627469"
-                    width="600"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     title="Lokasi MAS Batamiyah"
                 ></iframe>
@@ -152,9 +146,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     VISI & MISI
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ VISI & MISI ═══════════════════════════════════════ -->
 <section id="visimisi">
     <div class="section-header fade-up">
         <p class="section-tag">Landasan Lembaga</p>
@@ -200,9 +192,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     PROGRAM / JURUSAN
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ PROGRAM ═══════════════════════════════════════ -->
 <section id="program">
     <div class="section-header fade-up">
         <p class="section-tag">Program Akademik</p>
@@ -255,9 +245,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     FASILITAS
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ FASILITAS ═══════════════════════════════════════ -->
 <section id="fasilitas">
     <div class="section-header fade-up">
         <p class="section-tag">Sarana &amp; Prasarana</p>
@@ -265,62 +253,20 @@
         <div class="divider"></div>
     </div>
     <div class="fasilitas-list">
-        <div class="fas-item fade-up">
-            <span class="icon">🏢</span>
-            <h4>Ruang Kepala Sekolah</h4>
-            <p>Ruang kerja kepala sekolah untuk administrasi, rapat, dan pengambilan keputusan sekolah</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">📚</span>
-            <h4>Ruang Guru</h4>
-            <p>Ruang istirahat dan persiapan mengajar serta diskusi akademik para guru</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">🏫</span>
-            <h4>Ruang Kelas</h4>
-            <p>3 kelas ber-AC dengan papan tulis dan meja ergonomis</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">🕌</span>
-            <h4>Musholla Sekolah</h4>
-            <p>Sarana ibadah, kajian, dan kegiatan rohani siswa</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">📖</span>
-            <h4>Perpustakaan</h4>
-            <p>Koleksi 300+ buku pelajaran &amp; kitab-kitab keagamaan</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">💻</span>
-            <h4>Lab Komputer</h4>
-            <p>10+ unit PC &amp; laptop dengan koneksi internet</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">⚽</span>
-            <h4>Lapangan Olahraga</h4>
-            <p>Sepak bola, takraw, voli &amp; bulu tangkis</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">🌐</span>
-            <h4>WiFi</h4>
-            <p>2 titik akses dengan koneksi 10–100 Mbps di seluruh area sekolah</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">🏥</span>
-            <h4>UKS</h4>
-            <p>Unit Kesehatan Sekolah dengan peralatan medis dasar</p>
-        </div>
-        <div class="fas-item fade-up">
-            <span class="icon">🍽️</span>
-            <h4>Kantin</h4>
-            <p>Menu bergizi, higienis, dan terjangkau untuk siswa &amp; guru</p>
-        </div>
+        <div class="fas-item fade-up"><span class="icon">🏢</span><h4>Ruang Kepala Sekolah</h4><p>Ruang kerja kepala sekolah untuk administrasi, rapat, dan pengambilan keputusan</p></div>
+        <div class="fas-item fade-up"><span class="icon">📚</span><h4>Ruang Guru</h4><p>Ruang istirahat dan persiapan mengajar serta diskusi akademik para guru</p></div>
+        <div class="fas-item fade-up"><span class="icon">🏫</span><h4>Ruang Kelas</h4><p>3 kelas ber-AC dengan papan tulis dan meja ergonomis</p></div>
+        <div class="fas-item fade-up"><span class="icon">🕌</span><h4>Musholla Sekolah</h4><p>Sarana ibadah, kajian, dan kegiatan rohani siswa</p></div>
+        <div class="fas-item fade-up"><span class="icon">📖</span><h4>Perpustakaan</h4><p>Koleksi 300+ buku pelajaran &amp; kitab-kitab keagamaan</p></div>
+        <div class="fas-item fade-up"><span class="icon">💻</span><h4>Lab Komputer</h4><p>10+ unit PC &amp; laptop dengan koneksi internet</p></div>
+        <div class="fas-item fade-up"><span class="icon">⚽</span><h4>Lapangan Olahraga</h4><p>Sepak bola, takraw, voli &amp; bulu tangkis</p></div>
+        <div class="fas-item fade-up"><span class="icon">🌐</span><h4>WiFi</h4><p>2 titik akses dengan koneksi 10–100 Mbps di seluruh area sekolah</p></div>
+        <div class="fas-item fade-up"><span class="icon">🏥</span><h4>UKS</h4><p>Unit Kesehatan Sekolah dengan peralatan medis dasar</p></div>
+        <div class="fas-item fade-up"><span class="icon">🍽️</span><h4>Kantin</h4><p>Menu bergizi, higienis, dan terjangkau untuk siswa &amp; guru</p></div>
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     EKSTRAKURIKULER
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ EKSKUL ═══════════════════════════════════════ -->
 <section id="ekskul">
     <div class="section-header fade-up">
         <p class="section-tag">Kegiatan Siswa</p>
@@ -346,9 +292,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     KONTAK
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ KONTAK ═══════════════════════════════════════ -->
 <section id="kontak">
     <div class="section-header fade-up">
         <p class="section-tag">Hubungi Kami</p>
@@ -398,9 +342,7 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     FOOTER
-     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
 <footer>
     <p>&copy; 2025 <span>MAS BATAMIYAH</span> — Kota Batam, Kepulauan Riau.</p>
     <br/>
@@ -414,6 +356,7 @@
     Seluruh hak cipta dilindungi.
 </footer>
 
-<link rel="stylesheet" href="script.js" />
+<!-- JS: tanpa defer agar pasti jalan, dipindahkan ke akhir body -->
+<script src="script.js"></script>
 </body>
 </html>
