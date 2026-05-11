@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://necromancer4432-jpg.github.io/MAS_BATAMIYAH.github.io/sitemap.xml
